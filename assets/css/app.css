@@ -213,3 +213,107 @@ footer p {
     transform: scale(1.2);
     filter: brightness(1.3);
 }
+.contact {
+    text-align: right;
+}
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+.about-container {
+    width: 70%;
+    height: 80%;
+    margin: 150px auto;
+    padding: 40px;
+    background: #ece6e6;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.about-container p {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 150px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* İletişim Formu */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-right: 20px;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #15243d;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    color: #15243d;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.gorsel {
+    width: 470px;  /* İkon alanının genişliği */
+    height: 450px; /* İkon alanının yüksekliği */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Taşmaları engelle */
+}
+
+.gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görseli alana sığdır, oranı koru */
+    border-radius: 10px; /* Hafif köşeleri yuvarlama (isteğe bağlı) */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row; /* Elemanları yatay olarak hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: center; /* Yatayda ortala */
+    gap: 15px; /* Elemanlar arasında boşluk bırak */
+    width: 70%; /* Genişliği %50 yap */
+    margin: 0 auto; /* Sayfanın ortasına al */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
