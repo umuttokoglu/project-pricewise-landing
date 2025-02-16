@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1><a href="index.html ">PriceWise</a></h1>
+            <section>
+                <a href="hakkımızda.html">Hakkımızda</a> 
+                <a href="iletişim.html">İletişim</a>
+            </section>
+        </div>
+    </header>
+    
+
+    <!-- İletişim Alanı -->
+    <div class="container">
+        <div class="form-container">
+            <h2>İletişim Formu</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Adınız</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Posta</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesajınız</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+        <div class="gorsel"><img src="assets/img/WhatsApp Image 2025-02-14 at 16.50.12.jpeg" alt="Görsel"></div>
+    </div>
+<footer>
+    <p>Tüm Hakları Saklıdır &copy; 2025</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="assets/img/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram">
+        </a>
+        <a href="" target="_blank">
+            <img src="assets/img/github.png" alt="GitHub">
+        </a>
+        <a href=""><img src="assets/img/x.png" alt="X"></a>
+
+        <a href="https://tr.linkedin.com/" target="_blank">
+            <img src="assets/img/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="TikTok">
+        </a>
+        
+    </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
