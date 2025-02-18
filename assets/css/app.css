@@ -11,63 +11,74 @@ body {
     transition: background-color 0.3s, color 0.3s;
     display: flex;
     flex-direction: column;
-    height: 100vh; 
+    height: 100vh;
 }
 
+/* HEADER */
 header {
-    background-color:#15243d;
+    background-color: #15243d;
     color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap; /* Mobilde bile yan yana kalsın */
+    white-space: nowrap; /* Yazılar asla alt satıra düşmesin */
 }
 
+/* Header İçeriği */
 header div {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
+/* Header İçindeki Bağlantılar */
 header section {
     display: flex;
     gap: 20px;
     margin-right: 30px;
+    flex-wrap: nowrap;
 }
 
+/* Header Linkleri */
 header section a {
     position: relative;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     transition: color 0.3s ease-in-out;
 }
 
+/* Linkler Arasında " | " */
 header section a:not(:last-child)::after {
     content: " | ";
     color: white;
     margin-left: 10px;
 }
 
+/* Header İçindeki Logo */
 header h1 {
     margin-left: 30px;
+    font-size: 2rem;
 }
+
 /* Header İçindeki PriceWise Yazısını Linke Çevir */
 header h1 a {
-    text-decoration: none; /* Altı çizili olmasın */
-    color: white; /* Yazıyı beyaz yap */
+    text-decoration: none;
+    color: white;
     transition: color 0.3s ease-in-out;
 }
 
-/* Üzerine Gelince Hafif Renk Değişimi */
 header h1 a:hover {
-    color: #ffdead; /* Hover efekti */
+    color: #ffdead;
 }
 
 header section a:hover {
     text-decoration: underline;
-    color: #ffdead; /* Hover efekti */
+    color: #ffdead;
 }
 
 h1 {
@@ -85,6 +96,7 @@ div[name="body"] {
     padding: 20px;
 }
 
+/* Ana Sayfa - Text Alanı */
 .text-container {
     width: 50%;
     margin-left: 40px;
@@ -104,16 +116,15 @@ div[name="body"] {
     text-align: left;
 }
 
-/* Butonları `p` etiketinin altına yan yana koy */
+/* Butonlar */
 .text-container .button-group {
     display: flex;
-    justify-content: center; /* Butonları ortala */
-    gap: 10px; /* Butonlar arasında 20px boşluk bırak */
-    margin-top: 70px; /* Butonları `p` etiketinden biraz aşağı çek */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 70px;
     margin-right: 100px;
 }
 
-/* Butonların Boyutunu Ayarla */
 .text-container .button-group button {
     width: 300px;
     height: 100px;
@@ -125,85 +136,76 @@ div[name="body"] {
     align-items: center;
 }
 
-/* Buton İçindeki Logolar */
 .text-container .button-group button img {
     width: 80%;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover Efekti */
 .text-container .button-group button:hover img {
     transform: scale(1.1);
 }
 
+/* Ana Sayfa - Görsel Alanı */
 .image-container {
     width: 50%;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: auto;
     margin-top: 100px;
     padding: 10px;
 }
 
-.image-container div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-}
-
-/* Fotoğrafın 45 Derece Eğik Olması ve Hover ile Düzelmesi */
-/* Fotoğrafın Z Ekseninde 45 Derece Eğik Olması ve Hover ile Düzelmesi */
 .image-container img {
     width: 450px;
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out; /* Yumuşak dönüş efekti */
-    transform: perspective(500px) rotateY(-10deg); /* Z ekseninde eğik durmasını sağlar */
+    transition: transform 0.5s ease-in-out;
+    transform: perspective(500px) rotateY(-10deg);
 }
 
-/* Hover Yapıldığında Düz Hale Getir */
 .image-container img:hover {
-    transform: perspective(500px) rotateY(0deg); /* Hover yapıldığında düzelir */
+    transform: perspective(500px) rotateY(0deg);
 }
 
+/* FOOTER */
 footer {
     display: flex;
-    justify-content: center; /* Yazıyı yatay olarak ortala */
-    align-items: center; /* Dikey olarak ortala */
-    padding: 25px;
+    justify-content: space-between; /* Sosyal medya ikonlarını sağa kaydır */
+    align-items: center;
+    padding: 20px;
     background-color: #15243d;
     color: white;
     width: 100%;
     position: relative;
-    margin-top: auto; /* Footer'ın her zaman en altta kalmasını sağlar */
+    margin-top: auto;
 }
 
 /* Footer Yazısı */
 footer p {
-    text-align: center; /* Yazıyı tam ortaya hizala */
-    margin: 0; /* Varsayılan boşlukları kaldır */
+    margin: 0;
     font-size: 1.2rem;
+    flex-grow: 1; /* Yazıyı sola yaslayıp ortalamayı sağlar */
+    text-align: center;
 }
 
-/* Sosyal Medya İkonlarını Sağda Tut */
+/* Sosyal Medya İkonları */
 .social-icons {
-    position: absolute;
-    right: 40px; /* Sağ köşeye yasla */
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 /* Yuvarlak Sosyal Medya İkonları */
 .social-icons a img {
     width: 35px;
     height: 35px;
-    border-radius: 50%; /* Tam yuvarlak yap */
+    border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -213,18 +215,10 @@ footer p {
     transform: scale(1.2);
     filter: brightness(1.3);
 }
-.contact {
-    text-align: right;
-}
-.contact a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-left: 20px;
-}
+
+/* Hakkımızda Sayfası */
 .about-container {
     width: 70%;
-    height: 80%;
     margin: 150px auto;
     padding: 40px;
     background: #ece6e6;
@@ -232,11 +226,14 @@ footer p {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
 .about-container p {
     font-size: 1.4rem;
     line-height: 2;
     color: black;
 }
+
+/* İletişim Sayfası */
 .container {
     display: flex;
     justify-content: space-between;
@@ -250,7 +247,6 @@ footer p {
     border-radius: 8px;
 }
 
-/* İletişim Formu */
 .form-container {
     background: white;
     padding: 20px;
@@ -259,61 +255,116 @@ footer p {
     width: 50%;
     margin-right: 20px;
 }
+
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #15243d;
 }
-.form-group {
-    margin-bottom: 15px;
-}
-label {
-    display: block;
-    font-weight: bold;
-    color: #15243d;
-}
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 .gorsel {
-    width: 470px;  /* İkon alanının genişliği */
-    height: 450px; /* İkon alanının yüksekliği */
+    width: 350px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Taşmaları engelle */
+    overflow: hidden;
+    margin: auto;
 }
 
 .gorsel img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Görseli alana sığdır, oranı koru */
-    border-radius: 10px; /* Hafif köşeleri yuvarlama (isteğe bağlı) */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.social-links {
-    display: flex;
-    flex-direction: row; /* Elemanları yatay olarak hizala */
-    align-items: center; /* Dikeyde ortala */
-    justify-content: center; /* Yatayda ortala */
-    gap: 15px; /* Elemanlar arasında boşluk bırak */
-    width: 70%; /* Genişliği %50 yap */
-    margin: 0 auto; /* Sayfanın ortasına al */
+/* 📌 Mobil Uyumlu Tasarım */
+@media (max-width: 768px) {
+    div[name="body"] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .text-container h1 {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .text-container p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    .image-container {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .about-container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .gorsel {
+        width: 250px;
+    }
+
+    header {
+        flex-wrap: nowrap; /* Mobilde bile yan yana kalsın */
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    header div {
+        flex-wrap: nowrap;
+    }
+
+    header section {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    header section a {
+        font-size: 1.2rem; /* Mobilde daha iyi görünüm için küçült */
+    }
+    footer {
+        flex-direction: column; /* Mobilde içerikleri alt alta koy */
+        text-align: center;
+        padding: 15px;
+    }
+
+    footer p {
+        order: 1; /* Yazıyı üstte tut */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        order: 2; /* İkonları alta al */
+        justify-content: center;
+        margin-right: 0;
+    }
 }
 
-.social-links a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.social-links img {
-    width: 30px;
-    height: 30px;
-}
+    
