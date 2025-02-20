@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Bir hata oluştu, lütfen tekrar deneyin.");
         });
     });
-
+    //boş
     // XSS saldırılarını önlemek için HTML özel karakterlerini kaçış karakterine çeviren fonksiyon
     function escapeHTML(str) {
         return str.replace(/[&<>"']/g, function (match) {

@@ -54,6 +54,7 @@ $email = htmlspecialchars(strip_tags($data['email']));
 $phone = htmlspecialchars(strip_tags($data['phone']));
 $message = htmlspecialchars(strip_tags($data['message']));
 
+
 // MySQL bağlantısını oluştur
 $conn = new mysqli($servername, $username, $password, $dbname);
 
