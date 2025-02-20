@@ -18,7 +18,7 @@ body {
 header {
     background-color: #15243d;
     color: white;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,23 +216,6 @@ footer p {
     filter: brightness(1.3);
 }
 
-/* Hakkımızda Sayfası */
-.about-container {
-    width: 70%;
-    margin: 150px auto;
-    padding: 40px;
-    background: #ece6e6;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.about-container p {
-    font-size: 1.4rem;
-    line-height: 2;
-    color: black;
-}
-
 /* İletişim Sayfası */
 .container {
     display: flex;
@@ -247,21 +230,17 @@ footer p {
     border-radius: 8px;
 }
 
-.form-container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    margin-right: 20px;
+button {
+    width: 100%;
+    padding: 5px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #15243d;
-}
-
+/* Resmi Büyük Ekranda Sağda Tut */
 .gorsel {
     width: 350px;
     height: auto;
@@ -279,45 +258,28 @@ footer p {
     border-radius: 10px;
 }
 
+/* Mesaj Etiketini Yukarı Al */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 /* 📌 Mobil Uyumlu Tasarım */
 @media (max-width: 768px) {
-    div[name="body"] {
+    .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .text-container {
+    .gorsel {
+        order: -1; /* Resmi en üste al */
         width: 90%;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .text-container h1 {
-        font-size: 3rem;
-        margin-left: 0;
-    }
-
-    .text-container p {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .button-group {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-right: 0;
-    }
-
-    .image-container {
-        width: 90%;
-        margin-top: 30px;
-    }
-
-    .about-container {
-        width: 90%;
-        margin: 50px auto;
-        padding: 20px;
     }
 
     .form-container {
@@ -325,12 +287,12 @@ footer p {
         margin-bottom: 20px;
     }
 
-    .gorsel {
-        width: 250px;
+    .gorsel img {
+        width: 100%;
     }
 
     header {
-        flex-wrap: nowrap; /* Mobilde bile yan yana kalsın */
+        flex-wrap: nowrap;
         justify-content: space-between;
         padding: 10px;
     }
@@ -346,25 +308,24 @@ footer p {
     }
 
     header section a {
-        font-size: 1.2rem; /* Mobilde daha iyi görünüm için küçült */
+        font-size: 1.3rem;
     }
+
     footer {
-        flex-direction: column; /* Mobilde içerikleri alt alta koy */
+        flex-direction: column;
         text-align: center;
         padding: 15px;
     }
 
     footer p {
-        order: 1; /* Yazıyı üstte tut */
+        order: 1;
         text-align: center;
         margin-bottom: 10px;
     }
 
     .social-icons {
-        order: 2; /* İkonları alta al */
+        order: 2;
         justify-content: center;
         margin-right: 0;
     }
 }
-
-    
