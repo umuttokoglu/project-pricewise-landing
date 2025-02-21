@@ -302,7 +302,6 @@ footer p {
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
 }
 
 .about-header h1 {
@@ -325,6 +324,7 @@ footer p {
     gap: 30px; /* Bloklar arası boşluk */
     justify-content: space-between; /* Blokları eşit aralıklarla yerleştir */
     text-align: left;
+    flex-wrap: wrap; /* Taşmayı engellemek için ekledik */
 }
 
 .about-section {
@@ -334,7 +334,9 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e0e0e0;
-    flex: 1; /* Her bir bloğun eşit genişlikte olmasını sağlar */
+    flex: 1 1 calc(33.333% - 30px); /* Eşit genişlikte ve taşmayı engelleyen flex özelliği */
+    min-width: 250px; /* Mobilde minimum genişlik */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
 }
 
 .about-section:hover {
@@ -412,7 +414,8 @@ footer p {
     }
 
     .about-section {
-        padding: 20px;
+        flex: 1 1 100%; /* Mobilde tam genişlik */
+        min-width: auto; /* Mobilde minimum genişliği kaldır */
     }
 
     .about-section h3 {
