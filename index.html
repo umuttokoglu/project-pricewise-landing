@@ -1,67 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Price Wise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Wise - Yeni Nesil Uygulama</title>
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
+<!-- HEADER -->
+<header>
+    <div>
+        <!-- Hamburger Menü Butonu -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        
+        <h1><a href="index.html" class="logo">PriceWise</a></h1>
 
-    <header>
-        <div>
-            <h1><a href="index.html" class="logo">PriceWise</a></h1>
-            <section>
-                <a href="hakkimizda.html">Hakkımızda</a>
-                <a href="iletisim.html">İletişim</a>
-            </section>
-        </div>
-    </header>
-
-    <div name="body">
-        <div class="text-container">
-            <section>
-                <h1>NEDEN BİZ</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores at doloremque nulla voluptate distinctio aliquid.</p>
-            </section>
-            <div class="button-group">
-                <button>
-                    <a href="https://play.google.com">
-                        <img src="assets/img/play-store.png" alt="Play Store">
-                    </a>
-                </button>
-                <button>
-                    <a href="https://www.apple.com/app-store/">
-                        <img src="assets/img/Download_on_the_App_Store_Badge.svg.png" alt="App Store">
-                    </a>
-                </button>
-            </div>
-        </div>
-        <div class="image-container">
-            <div>
-                <img src="assets/img/max-5-rafli-kitaplik-4435-kitapliklar-29385-25-B.jpg" alt="Ürün Görseli">
-            </div>
-        </div>
+        <!-- Masaüstü Menü (Mobilde gizli olacak) -->
+        <section>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+        </section>
     </div>
+</header>
 
-    <footer>
-        <p>Tüm Hakları Saklıdır &copy; 2025</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="assets/img/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram">
-            </a>
-            <a href="https://wa.me/1234567890" target="_blank">
-                <img src="assets/img/github.png" alt="WhatsApp">
-            </a>
-            <a href=""><img src="assets/img/x.png" alt=""></a>
-            <a href="https://tr.linkedin.com/" target="_blank">
-                <img src="assets/img/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="TikTok">
-            </a>
+<!-- Mobil Menü -->
+<div class="mobile-menu">
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+</div>
+
+<main>
+    
+  <!-- Özellikler Bölümü -->
+    <section class="why-pricewise">
+        <h2>📌 Neden PriceWise?</h2>
+        <div class="why-container">
+            <div class="why-box">
+                <h3> Topluluk Destekli Fiyat Takibi</h3>
+                <p>Kullanıcılar anlık olarak fiyatları girer ve günceller. Böylece her zaman en güncel fiyatları görürsünüz.</p>
+            </div>
+            <div class="why-box">
+                <h3>Anlık Bildirimler ile Kaçırmayın!</h3>
+                <p>Belirlediğiniz ürünlerde fiyat düştüğünde anında bildirim alın.</p>
+            </div>
+            <div class="why-box">
+                <h3>Detaylı Fiyat Analizi</h3>
+                <p>Ürünlerin geçmiş fiyat değişimlerini inceleyerek en iyi satın alma zamanını belirleyin.</p>
+            </div>
         </div>
-    </footer>
+    </section>
+        
+    <section class="how-it-works">
+        <h2>PriceWise Nasıl Çalışır?</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>🛒 Fiyat Ekle</h3>
+                <p>Gördüğünüz fiyatı PriceWise’a ekleyerek topluluğa katkıda bulunun.
+                    sjdljksanjklsanjflsakfklasfnlaskdfnalskfnaslkfnaslkfnsalkf
+                    sjldfnsaljfnaslkfnasljkfnaslfjnabslfljf
+                </p>
+            </div>
+            <div class="step">
+                <h3>📊 Fiyat Takibi</h3>
+                <p>Fiyat geçmişini inceleyerek en iyi zamanı yakalayın.</p>
+            </div>
+            <div class="step">
+                <h3>🔔 Bildirim Al</h3>
+                <p>Favori ürünlerinizi ekleyin, fiyatı düştüğünde anında haber alın.</p>
+            </div>
+            <div class="step">
+                <h3>🤝 Topluluk Desteği</h3>
+                <p>Diğer kullanıcılarla etkileşime girerek en güvenilir fiyatları alın.</p>
+            </div>
+        </div>
+    </section>
 
-    <script src="./assets/js/app.js"></script>
+      <!-- Hero Bölümü -->
+      <section class="hero">
+        <h1>"Fiyatları Akıllıca Takip Edin, Kazançlı Çıkın!"</h1>
+        <p>PriceWise ile en uygun fiyatları anında keşfedin, alışverişlerinizde tasarruf sağlayın.</p>
+        <div class="button">
+            <a href="https://www.apple.com/tr/app-store/"><img src="assets/img/Apple_logo_black.svg.png" alt="App Store"> Get it on the App Store</a>
+            <a href="https://play.google.com/store/apps?hl=tr&pli=1"><img src="assets/img/104089.png" alt="Play Store"> Get it on Play Store</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Tüm Hakları Saklıdır &copy; 2025</p>
+    <div class="social-icons">
+        <a href="#"><img src="assets/img/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/img/github.png" alt="WhatsApp"></a>
+        <a href="#"><img src="assets/img/x.png" alt="Twitter"></a>
+        <a href="#"><img src="assets/img/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="LinkedIn"></a>
+    </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>

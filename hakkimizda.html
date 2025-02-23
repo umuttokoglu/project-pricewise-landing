@@ -8,17 +8,26 @@
     <title>Price Wise - Hakkımızda</title>
 </head>
 <body>
-
     <header>
-        <div>
-            <h1><a href="index.html" class="logo">PriceWise</a></h1>
-            <section>
-                <a href="hakkimizda.html">Hakkımızda</a>
-                <a href="iletisim.html">İletişim</a>
-            </section>
-        </div>
-    </header>
+    <div>
+        <!-- Hamburger Menü Butonu -->
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        
+        <h1><a href="index.html" class="logo">PriceWise</a></h1>
 
+        <!-- Masaüstü Menü (Mobilde gizli olacak) -->
+        <section>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="iletisim.html">İletişim</a>
+        </section>
+    </div>
+</header>
+
+<!-- Mobil Menü -->
+<div class="mobile-menu">
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="iletisim.html">İletişim</a>
+</div>
 <!-- HAKKIMIZDA İÇERİĞİ -->
 <div class="about-container">
     <div class="about-header">
@@ -59,5 +68,6 @@
         </a>
     </div>
 </footer>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
