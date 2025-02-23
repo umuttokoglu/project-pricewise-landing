@@ -30,30 +30,44 @@
     
 
     <!-- İletişim Alanı -->
-    <div class="container">
-        <div class="form-container">
-            <h2>İletişim Formu</h2>
-            <form action="submit_form.php" method="POST">
-                <div class="form-group">
-                    <label for="name">Adınız</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-Posta</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mesajınız</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Gönder</button>
-            </form>
-        </div>
-        <div class="gorsel"><img src="assets/img/WhatsApp Image 2025-02-14 at 16.50.12.jpeg" alt="Görsel"></div>
+<div class="container">
+    <div class="form-container">
+        <p class="title">İletişim Formu</p>
+        <p class="message">Bize ulaşın, en kısa sürede sizinle iletişime geçelim. </p>
+        
+        <form action="submit_form.php" method="POST">
+            <div class="flex">
+                <label>
+                    <input class="input" type="text" id="name" name="name" required>
+                    <span>Adınız</span>
+                </label>
+
+                <label>
+                    <input class="input" type="text" id="surname" name="surname" required>
+                    <span>Soyadınız</span>
+                </label>
+            </div>  
+                    
+            <label>
+                <input class="input" type="email" id="email" name="email" required>
+                <span>E-Posta</span>
+            </label> 
+                
+            <label>
+                <input class="input" type="tel" id="phone" name="phone" required>
+                <span>Telefon</span>
+            </label>
+
+            <label>
+                <textarea class="input" id="message" name="message" rows="4" required></textarea>
+                <span>Mesajınız</span>
+            </label>
+
+            <button class="submit" type="submit">Gönder</button>
+        </form>
+    </div>
+    <div class="gorsel">
+        <img src="assets/img/WhatsApp Image 2025-02-14 at 16.50.12.jpeg" alt="Görsel">
     </div>
 <footer>
     <p>Tüm Hakları Saklıdır &copy; 2025</p>
