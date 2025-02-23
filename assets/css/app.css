@@ -363,6 +363,7 @@ footer p {
 }
 
 /* İletişim Sayfası */
+/*  İletişim Sayfası */
 .container {
     display: flex;
     justify-content: space-between;
@@ -371,29 +372,110 @@ footer p {
     max-width: 900px;
     margin: 150px auto;
     padding: 20px;
-    background: white;
+    background: #1a1a1a;
+    color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
+/*  Form Stili */
 .form-container {
-    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    margin-right: 20px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
 }
 
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #15243d;
+/*  Başlık */
+.title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+    position: relative;
 }
 
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+}
+
+.title::after {
+    animation: pulse 1s linear infinite;
+}
+
+/*  Açıklama Metni */
+.message {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*  Form Alanları */
+.form label {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    border: 1px solid rgba(105, 105, 105, 0.4);
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+textarea.input {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/*  İsim ve Soyisim Alanı Yan Yana */
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+/*  Gönder Butonu */
+.submit {
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #00bfff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: #00bfff96;
+}
+
+/*  Resim Alanı */
 .gorsel {
     width: 350px;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -553,38 +635,6 @@ footer p {
         text-align: center;
     }
 
-    .about-container {
-        width: 90%;
-        margin: 50px auto;
-        padding: 20px;
-    }
-
-    .about-header h1 {
-        font-size: 2rem;
-    }
-
-    .about-header .subtitle {
-        font-size: 1rem;
-    }
-
-    .about-content {
-        flex-direction: column; /* Mobilde blokları alt alta yerleştir */
-        gap: 20px;
-    }
-
-    .about-section {
-        flex: 1 1 100%; /* Mobilde tam genişlik */
-        min-width: auto; /* Mobilde minimum genişliği kaldır */
-    }
-
-    .about-section h3 {
-        font-size: 1.3rem;
-    }
-
-    .about-section p {
-        font-size: 0.95rem;
-    }
-
     .form-container {
         width: 90%;
         margin-bottom: 20px;
@@ -593,6 +643,25 @@ footer p {
     .gorsel {
         width: 250px;
     }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gorsel {
+        order: -1; /* Resmi en üste al */
+        width: 90%;
+    }
+
+    .form-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .gorsel img {
+        width: 100%;
+    }
+
 
       /* Header Mobilde Aynı Görünümde Kalsın */
      header {
@@ -627,5 +696,15 @@ footer p {
     .social-icons {
         margin-top: 10px;
         justify-content: center;
+    }
+}
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.8);
+        opacity: 0;
     }
 }
