@@ -161,6 +161,7 @@ header h1 a:hover, header section a:hover {
     position: relative; /* Konumu bağımsız yap */
     top: 20px; /* Butonları aşağı kaydır */
 }
+
 .hero .button a {
     display: flex;
     align-items: center;
@@ -291,6 +292,7 @@ header h1 a:hover, header section a:hover {
     text-align: center;
     line-height: 1.7;
 }
+
 h1 {
     font-size: 2rem;
 }
@@ -401,11 +403,13 @@ footer p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .about-container p {
     font-size: 1.4rem;
     line-height: 2;
     color: black;
 }
+
 .about-header h1 {
     font-size: 2.5rem;
     color: #15243d;
@@ -460,6 +464,7 @@ footer p {
     line-height: 1.6;
     margin-bottom: 0;
 }
+
 .text-container p,
 .about-container p,
 .form-container p,
@@ -471,12 +476,14 @@ footer p {
     margin-bottom: 20px; /* Paragraflar arasında boşluk artır */
     padding-bottom: 20px; /* Paragrafın altına boşluk ekle */
 }
+
 .about-section,
 .text-container,
 .form-container,
 .about-container {
     margin-bottom: 40px; /* Blokların altında boşluk artır */
 }
+
 @keyframes underline {
     from {
         width: 0;
@@ -498,6 +505,7 @@ footer p {
     margin: 20px auto; /* Çizgiyi ortala ve üst/alt boşluk ekle */
     transition: width 0.3s ease, background 0.3s ease; /* Geçiş efekti */
 }
+
 .text-container p:hover::after,
 .about-container p:hover::after,
 .form-container p:hover::after,
@@ -565,14 +573,16 @@ footer p {
     .hamburger-menu {
         display: flex;
     }
+
     .mobile-menu {
         display: none;
     }
-   /* Hero Bölümü */
-   .hero {
-    padding: 50px 10px;
-    text-align: center;
-}
+
+    /* Hero Bölümü */
+    .hero {
+        padding: 50px 10px;
+        text-align: center;
+    }
 
     .hero h1 {
         font-size: 1.8rem;
@@ -655,20 +665,6 @@ footer p {
         width: 250px;
     }
 
-      /* Header Mobilde Aynı Görünümde Kalsın */
-     header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 15px;
-        width: 100%;
-    }
-
-    header section {
-        display: none;
-        gap: 15px;
-        margin-right: 10px;
-    }
-
     header section a {
         font-size: 1.2rem;
     }
@@ -689,6 +685,7 @@ footer p {
         margin-top: 10px;
         justify-content: center;
     }
+
     .text-container p,
     .about-container p,
     .form-container p,
@@ -696,6 +693,7 @@ footer p {
         max-width: 90%; /* Mobilde paragraf genişliğini küçült */
         padding: 8px 0; /* Mobilde boşluğu azalt */
     }
+
     .text-container p:not(:last-child),
     .about-container p:not(:last-child),
     .form-container p:not(:last-child),
