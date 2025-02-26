@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-<!-- HEADER -->
-<header>
-    <div>
-        <!-- Hamburger Menü Butonu -->
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        
-        <h1><a href="index.html" class="logo">PriceWise</a></h1>
-
-        <!-- Masaüstü Menü (Mobilde gizli olacak) -->
-        <section>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="iletisim.html">İletişim</a>
-        </section>
-    </div>
-</header>
-
-<!-- Mobil Menü -->
-<div class="mobile-menu">
-    <a href="hakkimizda.html">Hakkımızda</a>
-    <a href="iletisim.html">İletişim</a>
-</div>
+    <header>
+        <div class="navbar">
+            <h1><a href="index.html" class="logo">PriceWise</a></h1>
+    
+            <!-- Hamburger Menü Butonu -->
+            <button class="hamburger" id="menu-btn">
+                &#9776;
+            </button>
+    
+            <!-- Masaüstü Menü -->
+            <nav class="nav-links">
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+    
+            <!-- Mobil Menü -->
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </header>
 
 <main>
     
@@ -56,8 +57,6 @@
             <div class="step">
                 <h3>🛒 Fiyat Ekle</h3>
                 <p>Gördüğünüz fiyatı PriceWise’a ekleyerek topluluğa katkıda bulunun.
-                    sjdljksanjklsanjflsakfklasfnlaskdfnalskfnaslkfnaslkfnsalkf
-                    sjldfnsaljfnaslkfnasljkfnaslfjnabslfljf
                 </p>
             </div>
             <div class="step">

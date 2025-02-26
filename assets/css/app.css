@@ -8,6 +8,7 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    min-width: 0;
 }
 
 body {
@@ -19,6 +20,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+html, body {
+    overflow-x: hidden; /* Yatay kaydırmayı tamamen kapat */
+    width: 100vw; /* İçeriğin tam genişlikte kalmasını sağla */
 }
 
 /* HEADER GENEL AYARLAR */
@@ -70,45 +75,60 @@ header h1 a {
 header h1 a:hover, header section a:hover {
     color: #ffdead;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #15243d;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* 📌 Masaüstü Menü */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
 .hamburger {
-    display: none; /* Varsayılan olarak gizli */
+    display: none; /* Masaüstünde görünmesin */
     font-size: 2rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    margin-right: 15px;
 }
 
 /* Mobil Menü */
 .mobile-menu {
-    display: none;
-    position: fixed;
-    top: 60px; /* Header'ın hemen altında başlasın */
+    display: none; /* Başlangıçta gizli */
+    flex-direction: column;
+    background: #15243d;
+    position: absolute;
+    top: 60px;
     left: 0;
     width: 100%;
-    background: #15243d;
-    padding: 10px 0;
-    text-align: left; /* Metinleri sola yasla */
-    padding-left: 20px; /* Yazıları biraz içeri al */
+    text-align: left;
+    padding: 10px 20px;
 }
 
-/* Menü Açıldığında Görünür Hale Getir */
-.mobile-menu.open {
-    display: block;
-}
-
-/* Menü İçindeki Linkler */
-/* Mobil Menü İçindeki Linkler */
 .mobile-menu a {
-    display: block;
     color: white;
-    font-size: 1.5rem;
-    padding: 15px 0;
     text-decoration: none;
-    transition: background 0.3s ease-in-out;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* İnce beyaz çizgi */
+    font-size: 1.3rem;
+    padding: 10px 0;
+    display: block;
 }
 
 /* Son linkin altındaki çizgiyi kaldır */
@@ -160,6 +180,7 @@ header h1 a:hover, header section a:hover {
     gap: 30px;
     position: relative; /* Konumu bağımsız yap */
     top: 20px; /* Butonları aşağı kaydır */
+    
 }
 
 .hero .button a {
@@ -292,6 +313,10 @@ header h1 a:hover, header section a:hover {
     text-align: center;
     line-height: 1.7;
 }
+ .hero, .why-pricewise, .how-it-works {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 h1 {
     font-size: 2rem;
@@ -313,6 +338,8 @@ footer {
     width: 100%;
     position: relative;
     margin-top: auto;
+    flex-direction: column; /* Mobilde dikey hizala */
+    text-align: center;
 }
 
 /* Footer Yazısı */
@@ -323,28 +350,25 @@ footer p {
     text-align: center;
 }
 
-/* Sosyal Medya İkonları */
 .social-icons {
     display: flex;
-    gap: 15px;
+    justify-content: center; /* Ortaya hizala */
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 20px;
+    gap: 10px; /* Aralarında biraz boşluk bırak */
+    margin-top: 15px; /* Üst boşluğu artır */
 }
 
-/* Yuvarlak Sosyal Medya İkonları */
 .social-icons a img {
-    width: 35px;
-    height: 35px;
+    width: 25px; /* Küçültülmüş ikon boyutu */
+    height: 25px;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover Efekti */
 .social-icons a:hover img {
-    transform: scale(1.2);
-    filter: brightness(1.3);
+    transform: scale(1.1); /* Hover efektiyle çok büyük olmasın */
+    filter: brightness(1.2);
 }
 
 /* İletişim Sayfası */
@@ -610,6 +634,16 @@ textarea.input {
         border: none;
         color: white;
         cursor: pointer;
+        order: -1;
+        margin-right: auto;
+    }
+    .logo {
+        margin-left: auto; /* "PriceWise" yazısını sağa yasla */
+        text-align: right; /* Yazıyı sağa hizala */
+        font-size: 1.6rem; /* Daha şık bir font */
+        font-weight: bold;
+        display: flex;
+        align-items: center;
     }
 
     header div {
@@ -618,10 +652,12 @@ textarea.input {
 
     /* Header Mobil Düzeni */
     header {
-        flex-wrap: nowrap; /* Mobilde bile yan yana kalsın */
+        display: flex;
         justify-content: space-between;
-        padding: 10px;
+        align-items: center;
+        padding: 10px 15px;
     }
+
 
     header h1 {
         margin-left: 10px; /* PriceWise'i sola yasla */
@@ -659,6 +695,7 @@ textarea.input {
     .mobile-menu {
         display: none;
     }
+    
 
     /* Hero Bölümü */
     .hero {
@@ -675,35 +712,73 @@ textarea.input {
     }
 
     .hero .button {
+        display: flex;
         flex-direction: column;
+        align-items: center; /* Butonları tam ortalar */
         gap: 15px;
+        width: 100%;
     }
 
     .hero .button a {
-        font-size: 0.9rem;
-        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Yazıları tam ortalar */
+        gap: 10px;
+        background: white;
+        padding: 18px 25px; /* Mobilde butonları biraz daha büyütelim */
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 1rem; /* Yazıları biraz büyütelim */
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 90%; /* Mobilde tam ortalanması için genişlik artırıldı */
         text-align: center;
+    }
+
+    .hero .button a img {
+        width: 20px; /* Mobilde ikonları biraz küçültelim */
+        height: 20px;
+    }
+
+    .hero .button a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
 
     /* Neden PriceWise Bölümü */
     .why-container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Kutuları tam ortalar */
+        justify-content: center;
+        width: 100%;
     }
 
     .why-box {
-        width: 90%;
+        width: 90%; /* Kutuların genişliği %90 olacak */
+        max-width: 350px; /* Maksimum genişlik sınırı koyduk */
+        text-align: center; /* İçeriği ortaladık */
+        padding: 20px;
     }
 
     /* PriceWise Nasıl Çalışır Bölümü */
     .steps {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Kutuları tam ortalar */
+        justify-content: center;
+        width: 100%;
+        padding: 0 5%; /* Kenarlardan eşit boşluk bırakır */
     }
 
     .step {
-        width: 90%;
-        text-align: center;
+        width: 90%; /* Kutuların genişliği ekranın %90'ı olacak */
+        max-width: 350px; /* Maksimum genişlik sınırı */
+        text-align: center; /* İçeriği ortalar */
+        padding: 20px;
+        margin: 10px auto; /* Üst ve alt boşluk verip tam ortalamak */
     }
 
     .about-container {
@@ -765,26 +840,21 @@ textarea.input {
         width: 100%;
     }
 
-    header section a {
-        font-size: 1.2rem;
-    }
-
     footer {
         flex-direction: column;
         text-align: center;
-        padding: 15px;
     }
 
     footer p {
-        order: 1; /* Yazıyı üstte tut */
-        text-align: center;
-        margin-bottom: 10px;
+        order: -2; /* Yazıyı alta al */
+        margin-top: 10px;
     }
 
     .social-icons {
-        margin-top: 10px;
-        justify-content: center;
+        order: 1; /* İkonları üste al */
+        margin-bottom: 10px;
     }
+    
 
     .text-container p,
     .about-container p,

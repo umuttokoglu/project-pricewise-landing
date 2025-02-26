@@ -9,19 +9,27 @@
 </head>
 <body>
     <header>
-    <div>
-        <!-- Hamburger Menü Butonu -->
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        
-        <h1><a href="index.html" class="logo">PriceWise</a></h1>
-
-        <!-- Masaüstü Menü (Mobilde gizli olacak) -->
-        <section>
-            <a href="hakkimizda.html">Hakkımızda</a>
-            <a href="iletisim.html">İletişim</a>
-        </section>
-    </div>
-</header>
+        <div class="navbar">
+            <h1><a href="index.html" class="logo">PriceWise</a></h1>
+    
+            <!-- Hamburger Menü Butonu -->
+            <button class="hamburger" id="menu-btn">
+                &#9776;
+            </button>
+    
+            <!-- Masaüstü Menü -->
+            <nav class="nav-links">
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </nav>
+    
+            <!-- Mobil Menü -->
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="iletisim.html">İletişim</a>
+            </div>
+        </div>
+    </header>
 
 <!-- Mobil Menü -->
 <div class="mobile-menu">

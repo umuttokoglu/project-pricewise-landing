@@ -73,6 +73,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-function toggleMenu() {
-    document.querySelector(".mobile-menu").classList.toggle("open");
-}
+// Menü butonunu ve mobil menüyü seç
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// Butona tıklanınca menüyü aç/kapat
+menuBtn.addEventListener("click", function () {
+    mobileMenu.classList.toggle("open");
+});
