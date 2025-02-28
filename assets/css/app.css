@@ -783,12 +783,14 @@ textarea.input {
 
     .about-container {
         width: 90%;
-        margin: 50px auto;
+        margin: 70px auto;
         padding: 20px;
     }
 
     .about-header h1 {
         font-size: 2rem;
+        margin-bottom: 50px;
+        padding-top: 20px;
     }
 
     .about-header .subtitle {
