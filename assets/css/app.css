@@ -22,8 +22,8 @@ body {
     height: 100vh;
 }
 html, body {
-    overflow-x: hidden; /* Yatay kaydırmayı tamamen kapat */
-    width: 100vw; /* İçeriğin tam genişlikte kalmasını sağla */
+    overflow-x: hidden; /* Yatay kaydÄ±rmayÄ± tamamen kapat */
+    width: 100vw; /* Ä°Ã§eriÄŸin tam geniÅŸlikte kalmasÄ±nÄ± saÄŸla */
 }
 
 /* HEADER */
@@ -41,7 +41,7 @@ header {
     z-index: 1000;
 }
 
-/* Navbar İçeriği */
+/* Navbar Ä°Ã§eriÄŸi */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ header {
     width: 100%;
 }
 
-/* 📌 LOGO (Sola Yaslandı) */
+/* ğŸ“Œ LOGO (Sola YaslandÄ±) */
 .navbar .logo {
     font-size: 2rem;
     text-decoration: none;
@@ -57,18 +57,18 @@ header {
     font-weight: bold;
 }
 
-/* 📌 Hamburger Menü Butonu (Sağa Yaslandı) */
+/* ğŸ“Œ Hamburger MenÃ¼ Butonu (SaÄŸa YaslandÄ±) */
 .hamburger {
-    display: none; /* Masaüstünde görünmez */
+    display: none; /* MasaÃ¼stÃ¼nde gÃ¶rÃ¼nmez */
     font-size: 2rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    margin-left: auto; /* En sağa itmek için */
+    margin-left: auto; /* En saÄŸa itmek iÃ§in */
 }
 
-/* 📌 Masaüstü Menü */
+/* ğŸ“Œ MasaÃ¼stÃ¼ MenÃ¼ */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -80,9 +80,9 @@ header {
     font-size: 1.2rem;
 }
 
-/* 📌 Mobil Menü */
+/* ğŸ“Œ Mobil MenÃ¼ */
 .mobile-menu {
-    display: none; /* Başlangıçta gizli olacak */
+    display: none; /* BaÅŸlangÄ±Ã§ta gizli olacak */
     position: absolute;
     top: 55px;
     left: 0;
@@ -91,33 +91,33 @@ header {
     padding: 20px ;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    border-top: 2px solid white; /* 📌 55px aşağıdaki çizgi */
+    border-top: 2px solid white; /* ğŸ“Œ 55px aÅŸaÄŸÄ±daki Ã§izgi */
 
 }
 
-/* Menü Açılınca */
+/* MenÃ¼ AÃ§Ä±lÄ±nca */
 .mobile-menu.open {
     display: block;
 }
 
-/* 📌 Hakkımızda ve İletişim arasına çizgi */
+/* ğŸ“Œ HakkÄ±mÄ±zda ve Ä°letiÅŸim arasÄ±na Ã§izgi */
 .mobile-menu a {
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
     padding: 10px 0;
     display: block;
-    border-bottom: 1px solid white; /* 📌 Menü linkleri arasında çizgi */
+    border-bottom: 1px solid white; /* ğŸ“Œ MenÃ¼ linkleri arasÄ±nda Ã§izgi */
 }
 
-/* 📌 Son linkin altındaki çizgiyi kaldır */
+/* ğŸ“Œ Son linkin altÄ±ndaki Ã§izgiyi kaldÄ±r */
 .mobile-menu a:last-child {
     border-bottom: none;
 }
 .banner {
     position: relative;
-    width: 100vw; /* Tam genişlik */
-    height: 50vh; /* Yüksekliği ayarla */
+    width: 100vw; /* Tam geniÅŸlik */
+    height: 50vh; /* YÃ¼ksekliÄŸi ayarla */
     overflow: hidden;
 }
 
@@ -125,7 +125,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.8) blur(2px); /* Hafif karartma ve bulanıklık efekti */
+    filter: brightness(0.8) blur(2px); /* Hafif karartma ve bulanÄ±klÄ±k efekti */
 }
 
 .banner-text {
@@ -165,8 +165,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 30px;
-    position: relative; /* Konumu bağımsız yap */
-    top: 20px; /* Butonları aşağı kaydır */
+    position: relative; /* Konumu baÄŸÄ±msÄ±z yap */
+    top: 20px; /* ButonlarÄ± aÅŸaÄŸÄ± kaydÄ±r */
     
 }
 
@@ -317,7 +317,7 @@ a {
 /* FOOTER */
 footer {
     display: flex;
-    justify-content: space-between; /* Sosyal medya ikonlarını sağa kaydır */
+    justify-content: space-between; /* Sosyal medya ikonlarÄ±nÄ± sagÌ†a kaydÄ±r */
     align-items: center;
     padding: 20px;
     background-color: #15243d;
@@ -329,11 +329,11 @@ footer {
     text-align: center;
 }
 
-/* Footer Yazısı */
+/* Footer YazÄ±sÄ± */
 footer p {
     margin: 0;
     font-size: 1.2rem;
-    flex-grow: 1; /* Yazıyı sola yaslayıp ortalamayı sağlar */
+    flex-grow: 1; /* YazÄ±yÄ± sola yaslayÄ±p ortalamayÄ± sagÌ†lar */
     text-align: center;
 }
 
@@ -341,12 +341,12 @@ footer p {
     display: flex;
     justify-content: center; /* Ortaya hizala */
     align-items: center;
-    gap: 10px; /* Aralarında biraz boşluk bırak */
-    margin-top: 15px; /* Üst boşluğu artır */
+    gap: 10px; /* AralarÄ±nda biraz boÅŸluk bÄ±rak */
+    margin-top: 15px; /* Ãœst boÅŸluÄŸu artÄ±r */
 }
 
 .social-icons a img {
-    width: 25px; /* Küçültülmüş ikon boyutu */
+    width: 25px; /* KÃ¼Ã§Ã¼ltÃ¼lmÃ¼ÅŸ ikon boyutu */
     height: 25px;
     border-radius: 50%;
     object-fit: cover;
@@ -354,12 +354,11 @@ footer p {
 }
 
 .social-icons a:hover img {
-    transform: scale(1.1); /* Hover efektiyle çok büyük olmasın */
+    transform: scale(1.1); /* Hover efektiyle Ã§ok bÃ¼yÃ¼k olmasÄ±n */
     filter: brightness(1.2);
 }
 
-/* İletişim Sayfası */
-/*  İletişim Sayfası */
+/* Ä°letiÅŸim SayfasÄ± */
 .container {
     display: flex;
     justify-content: space-between;
@@ -368,110 +367,30 @@ footer p {
     max-width: 900px;
     margin: 150px auto;
     padding: 20px;
-    background: #1a1a1a;
-    color: white;
+    background: #15243d;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-/*  Form Stili */
-.form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-}
-
-/*  Başlık */
-.title {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    color: #00bfff;
-    position: relative;
-}
-
-.title::before,
-.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: #00bfff;
-}
-
-.title::after {
-    animation: pulse 1s linear infinite;
-}
-
-/*  Açıklama Metni */
-.message {
-    font-size: 14.5px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/*  Form Alanları */
-.form label {
-    width: 100%;
-    font-size: 14px;
-    font-weight: bold;
     color: white;
-    display: block;
-    margin-bottom: 5px;
 }
 
-.input {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    padding: 12px;
-    outline: none;
-    border: 1px solid rgba(105, 105, 105, 0.4);
-    border-radius: 10px;
-    font-size: 16px;
-    transition: 0.3s ease-in-out;
+.form-container {
+    background: #15243d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-right: 20px;
 }
 
-textarea.input {
-    min-height: 100px;
-    resize: vertical;
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
 }
 
-/*  İsim ve Soyisim Alanı Yan Yana */
-.flex {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-
-/*  Gönder Butonu */
-.submit {
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    background-color: #00bfff;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.submit:hover {
-    background-color: #00bfff96;
-}
-
-/*  Resim Alanı */
 .gorsel {
     width: 350px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -486,7 +405,143 @@ textarea.input {
     border-radius: 10px;
 }
 
-/* Hakkımızda Sayfası */
+/* Form Stili */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #15243d;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+    color: white;
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid + span {
+    color: green;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* HakkÄ±mÄ±zda SayfasÄ± */
 .about-container {
     max-width: 1200px;
     margin: 100px auto 50px;
@@ -532,7 +587,7 @@ textarea.input {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e0e0e0;
-    flex: 1 1 calc(33.333% - 20px); /* 3 sütunlu düzen için genişlik ayarı */
+    flex: 1 1 calc(33.333% - 20px); /* 3 sÃ¼tunlu dÃ¼zen iÃ§in geniÅŸlik ayarÄ± */
     box-sizing: border-box;
     min-width: 250px;
 }
@@ -560,21 +615,20 @@ textarea.input {
 
 .text-container p,
 .about-container p,
-.form-container p,
 .about-section p {
     text-align: center; /* Metni ortala */
-    max-width: 600px; /* Paragraf genişliğini sınırla */
-    margin: 0 auto; /* Paragrafı ortala */
-    padding: 10px 0; /* Paragrafın üst ve alt boşluğunu ayarla */
-    margin-bottom: 20px; /* Paragraflar arasında boşluk artır */
-    padding-bottom: 20px; /* Paragrafın altına boşluk ekle */
+    max-width: 600px; /* Paragraf geniÅŸliÄŸini sÄ±nÄ±rla */
+    margin: 0 auto; /* ParagrafÄ± ortala */
+    padding: 10px 0; /* ParagrafÄ±n Ã¼st ve alt boÅŸluÄŸunu ayarla */
+    margin-bottom: 20px; /* Paragraflar arasÄ±nda boÅŸluk artÄ±r */
+    padding-bottom: 20px; /* ParagrafÄ±n altÄ±na boÅŸluk ekle */
 }
 
 .about-section,
 .text-container,
 .form-container,
 .about-container {
-    margin-bottom: 40px; /* Blokların altında boşluk artır */
+    margin-bottom: 40px; /* BloklarÄ±n altÄ±nda boÅŸluk artÄ±r */
 }
 
 @keyframes underline {
@@ -588,30 +642,28 @@ textarea.input {
 
 .text-container p:not(:last-child)::after,
 .about-container p:not(:last-child)::after,
-.form-container p:not(:last-child)::after,
 .about-section p:not(:last-child)::after {
     content: "";
     display: block;
-    width: 50%; /* Çizginin genişliği */
-    height: 2px; /* Çizginin kalınlığı */
-    background: #15243d; /* Çizgi rengi */
-    margin: 20px auto; /* Çizgiyi ortala ve üst/alt boşluk ekle */
-    transition: width 0.3s ease, background 0.3s ease; /* Geçiş efekti */
+    width: 50%; /* Ã‡izginin geniÅŸliÄŸi */
+    height: 2px; /* Ã‡izginin kalÄ±nlÄ±ÄŸÄ± */
+    background: #15243d; /* Ã‡izgi rengi */
+    margin: 20px auto; /* Ã‡izgiyi ortala ve Ã¼st/alt boÅŸluk ekle */
+    transition: width 0.3s ease, background 0.3s ease; /* GeÃ§iÅŸ efekti */
 }
 
 .text-container p:hover::after,
 .about-container p:hover::after,
-.form-container p:hover::after,
 .about-section p:hover::after {
-    width: 100%; /* Hover durumunda çizginin genişliğini artır */
-    background: #6a6966; /* Hover durumunda çizgi rengini değiştir */
+    width: 100%; /* Hover durumunda Ã§izginin geniÅŸliÄŸini artÄ±r */
+    background: #6a6966; /* Hover durumunda Ã§izgi rengini deÄŸiÅŸtir */
 }
 
 
-/* 📌 Mobil Uyumlu Tasarım */
+/* ğŸ“Œ Mobil Uyumlu TasarÄ±m */
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Mobilde görünsün */
+        display: block; /* Mobilde gÃ¶rÃ¼nsÃ¼n */
         position: absolute;
         right: 20px;
         top: 50%;
@@ -625,9 +677,9 @@ textarea.input {
         margin-right: auto;
     }
     .logo {
-        margin-left: auto; /* "PriceWise" yazısını sağa yasla */
-        text-align: right; /* Yazıyı sağa hizala */
-        font-size: 1.6rem; /* Daha şık bir font */
+        margin-left: auto; /* "PriceWise" yazÄ±sÄ±nÄ± saÄŸa yasla */
+        text-align: right; /* YazÄ±yÄ± saÄŸa hizala */
+        font-size: 1.6rem; /* Daha ÅŸÄ±k bir font */
         font-weight: bold;
         display: flex;
         align-items: center;
@@ -637,7 +689,7 @@ textarea.input {
         display: flex;
     }
 
-    /* Header Mobil Düzeni */
+    /* Header Mobil DÃ¼zeni */
     header {
         display: flex;
         justify-content: space-between;
@@ -648,21 +700,21 @@ textarea.input {
 
     header h1 {
         margin-left: 10px; /* PriceWise'i sola yasla */
-        font-size: 1.5rem; /* Yazı boyutunu küçült */
-        flex: 1; /* PriceWise'in genişliğini artır */
+        font-size: 1.5rem; /* YazÄ± boyutunu kÃ¼Ã§Ã¼lt */
+        flex: 1; /* PriceWise'in geniÅŸliÄŸini artÄ±r */
     }
 
     header section {
-        gap: 10px; /* Bağlantılar arasındaki boşluğu azalt */
-        margin-right: 10px; /* Sağ kenardan boşluğu azalt */
-        justify-content: flex-end; /* Bağlantıları sağa yasla */
+        gap: 10px; /* BaÄŸlantÄ±lar arasÄ±ndaki boÅŸluÄŸu azalt */
+        margin-right: 10px; /* SaÄŸ kenardan boÅŸluÄŸu azalt */
+        justify-content: flex-end; /* BaÄŸlantÄ±larÄ± saÄŸa yasla */
     }
 
     header section a {
-        font-size: 1rem; /* Bağlantı yazı boyutunu küçült */
+        font-size: 1rem; /* BaÄŸlantÄ± yazÄ± boyutunu kÃ¼Ã§Ã¼lt */
     }
 
-    /* Diğer Mobil Düzenlemeler */
+    /* DiÄŸer Mobil DÃ¼zenlemeler */
     div[name="body"] {
         flex-direction: column;
         align-items: center;
@@ -670,9 +722,9 @@ textarea.input {
         position: relative;
     }
 
-    /* Menü butonunun header içinde kalmasını sağlar */
+    /* MenÃ¼ butonunun header iÃ§inde kalmasÄ±nÄ± saÄŸlar */
     .nav-links {
-        display: none; /* Mobilde normal menüyü gizle */
+        display: none; /* Mobilde normal menÃ¼yÃ¼ gizle */
     }
 
     .hamburger-menu {
@@ -683,17 +735,17 @@ textarea.input {
         display: none;
     }
     .banner {
-        height: 40vh; /* Mobilde yüksekliği biraz azalt */
+        height: 40vh; /* Mobilde yÃ¼ksekliÄŸi biraz azalt */
     }
 
     .banner-text {
-        font-size: 1.5rem; /* Küçük ekranlar için yazıyı biraz küçült */
-        white-space: normal; /* Uzun kelimeleri taşır */
+        font-size: 1.5rem; /* KÃ¼Ã§Ã¼k ekranlar iÃ§in yazÄ±yÄ± biraz kÃ¼Ã§Ã¼lt */
+        white-space: normal; /* Uzun kelimeleri taÅŸÄ±r */
         text-align: center;
-        width: 80%; /* Yazıyı genişlet */
+        width: 80%; /* YazÄ±yÄ± geniÅŸlet */
     }
 
-    /* Hero Bölümü */
+    /* Hero BÃ¶lÃ¼mÃ¼ */
     .hero {
         padding: 50px 10px;
         text-align: center;
@@ -710,7 +762,7 @@ textarea.input {
     .hero .button {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Butonları tam ortalar */
+        align-items: center; /* ButonlarÄ± tam ortalar */
         gap: 15px;
         width: 100%;
     }
@@ -718,23 +770,24 @@ textarea.input {
     .hero .button a {
         display: flex;
         align-items: center;
-        justify-content: center; /* Yazıları tam ortalar */
+        justify-content: center; /* YazÄ±larÄ± tam ortalar */
         gap: 10px;
         background: white;
-        padding: 18px 25px; /* Mobilde butonları biraz daha büyütelim */
+        padding: 18px 25px; /* Mobilde butonlarÄ± biraz daha bÃ¼yÃ¼telim */
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-size: 1rem; /* Yazıları biraz büyütelim */
+        font-size: 1rem; /* YazÄ±larÄ± biraz bÃ¼yÃ¼telim */
         font-weight: bold;
         text-decoration: none;
+
         color: black;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-        width: 90%; /* Mobilde tam ortalanması için genişlik artırıldı */
+        width: 90%; /* Mobilde tam ortalanmasÄ± iÃ§in geniÅŸlik artÄ±rÄ±ldÄ± */
         text-align: center;
     }
 
     .hero .button a img {
-        width: 20px; /* Mobilde ikonları biraz küçültelim */
+        width: 20px; /* Mobilde ikonlarÄ± biraz kÃ¼Ã§Ã¼ltelim */
         height: 20px;
     }
 
@@ -743,38 +796,38 @@ textarea.input {
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
 
-    /* Neden PriceWise Bölümü */
+    /* Neden PriceWise BÃ¶lÃ¼mÃ¼ */
     .why-container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Kutuları tam ortalar */
+        align-items: center; /* KutularÄ± tam ortalar */
         justify-content: center;
         width: 100%;
     }
 
     .why-box {
-        width: 90%; /* Kutuların genişliği %90 olacak */
-        max-width: 350px; /* Maksimum genişlik sınırı koyduk */
-        text-align: center; /* İçeriği ortaladık */
+        width: 90%; /* KutularÄ±n geniÅŸliÄŸi %90 olacak */
+        max-width: 350px; /* Maksimum geniÅŸlik sÄ±nÄ±rÄ± koyduk */
+        text-align: center; /* Ä°Ã§eriÄŸi ortaladÄ±k */
         padding: 20px;
     }
 
-    /* PriceWise Nasıl Çalışır Bölümü */
+    /* PriceWise NasÄ±l Ã‡alÄ±ÅŸÄ±r BÃ¶lÃ¼mÃ¼ */
     .steps {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Kutuları tam ortalar */
+        align-items: center; /* KutularÄ± tam ortalar */
         justify-content: center;
         width: 100%;
-        padding: 0 5%; /* Kenarlardan eşit boşluk bırakır */
+        padding: 0 5%; /* Kenarlardan eÅŸit boÅŸluk bÄ±rakÄ±r */
     }
 
     .step {
-        width: 90%; /* Kutuların genişliği ekranın %90'ı olacak */
-        max-width: 350px; /* Maksimum genişlik sınırı */
-        text-align: center; /* İçeriği ortalar */
+        width: 90%; /* KutularÄ±n geniÅŸliÄŸi ekranÄ±n %90'Ä± olacak */
+        max-width: 350px; /* Maksimum geniÅŸlik sÄ±nÄ±rÄ± */
+        text-align: center; /* Ä°Ã§eriÄŸi ortalar */
         padding: 20px;
-        margin: 10px auto; /* Üst ve alt boşluk verip tam ortalamak */
+        margin: 10px auto; /* Ãœst ve alt boÅŸluk verip tam ortalamak */
     }
 
     .about-container {
@@ -799,7 +852,7 @@ textarea.input {
     }
 
     .about-section {
-        flex: 1 1 100%; /* Mobilde tam genişlik */
+        flex: 1 1 100%; /* Mobilde tam geniÅŸlik */
         min-width: auto;
     }
 
@@ -811,11 +864,6 @@ textarea.input {
         font-size: 0.95rem;
     }
 
-    .form-container {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
     .gorsel {
         width: 250px;
     }
@@ -825,11 +873,20 @@ textarea.input {
     }
 
     .gorsel {
-        order: -1; /* Resmi en üste al */
+        order: -1; /* Resmi en Ã¼ste al */
         width: 90%;
+    }
+    .form {
+        padding: 0;
+        padding-top: 20px;
     }
 
     .form-container {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
         width: 90%;
         margin-bottom: 20px;
     }
@@ -844,30 +901,29 @@ textarea.input {
     }
 
     footer p {
-        order: -2; /* Yazıyı alta al */
+        order: -2; /* YazÄ±yÄ± alta al */
         margin-top: 10px;
     }
 
     .social-icons {
-        order: 1; /* İkonları üste al */
+        order: 1; /* Ä°konlarÄ± Ã¼ste al */
         margin-bottom: 10px;
     }
     
 
     .text-container p,
     .about-container p,
-    .form-container p,
     .about-section p {
-        max-width: 90%; /* Mobilde paragraf genişliğini küçült */
-        padding: 8px 0; /* Mobilde boşluğu azalt */
+        max-width: 90%; /* Mobilde paragraf geniÅŸliÄŸini kÃ¼Ã§Ã¼lt */
+        padding: 8px 0; /* Mobilde boÅŸluÄŸu azalt */
     }
 
     .text-container p:not(:last-child),
     .about-container p:not(:last-child),
     .form-container p:not(:last-child),
     .about-section p:not(:last-child) {
-        padding-bottom: 15px; /* Mobilde çizgi ile metin arasındaki boşluğu azalt */
-        margin-bottom: 15px; /* Mobilde paragraflar arasındaki boşluğu azalt */
+        padding-bottom: 15px; /* Mobilde Ã§izgi ile metin arasÄ±ndaki boÅŸluÄŸu azalt */
+        margin-bottom: 15px; /* Mobilde paragraflar arasÄ±ndaki boÅŸluÄŸu azalt */
     }
 }
 @keyframes pulse {
