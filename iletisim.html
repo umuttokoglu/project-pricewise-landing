@@ -38,64 +38,58 @@
     
 
     <!-- İletişim Alanı -->
-<div class="container">
-    <div class="form-container">
-        <p class="title">İletişim Formu</p>
-        <p class="message">Bize ulaşın, en kısa sürede sizinle iletişime geçelim. </p>
-        
-        <form action="submit_form.php" method="POST">
-            <div class="flex">
+    <div class="container">
+        <div class="form-container">
+            <form class="form">
+                <p class="title">İletişim Formu</p>
+                <p class="message">Bize ulaşın, en kısa sürede sizinle iletişime geçelim.</p>
+                
                 <label>
                     <input class="input" type="text" id="name" name="name" required>
-                    <span>Adınız</span>
+                    <span>Adınız ve Soyadınız</span>
+                </label>
+
+                        
+                <label>
+                    <input class="input" type="email" id="email" name="email" required>
+                    <span>E-Posta</span>
+                </label> 
+                    
+                <label>
+                    <input class="input" type="tel" id="phone" name="phone" required>
+                    <span>Telefon</span>
                 </label>
 
                 <label>
-                    <input class="input" type="text" id="surname" name="surname" required>
-                    <span>Soyadınız</span>
+                    <textarea class="input" id="message" name="message" rows="4" required></textarea>
+                    <span>Mesajınız</span>
                 </label>
-            </div>  
-                    
-            <label>
-                <input class="input" type="email" id="email" name="email" required>
-                <span>E-Posta</span>
-            </label> 
-                
-            <label>
-                <input class="input" type="tel" id="phone" name="phone" required>
-                <span>Telefon</span>
-            </label>
 
-            <label>
-                <textarea class="input" id="message" name="message" rows="4" required></textarea>
-                <span>Mesajınız</span>
-            </label>
-
-            <button class="submit" type="submit">Gönder</button>
-        </form>
+                <button class="submit" type="submit">Gönder</button>
+            </form>
+        </div>
+        <div class="gorsel">
+            <img src="assets/img/WhatsApp Image 2025-02-14 at 16.50.12.jpeg" alt="Görsel">
+        </div>
     </div>
-    <div class="gorsel">
-        <img src="assets/img/WhatsApp Image 2025-02-14 at 16.50.12.jpeg" alt="Görsel">
-    </div>
-<footer>
-    <p>Tüm Hakları Saklıdır &copy; 2025</p>
-    <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="assets/img/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram">
-        </a>
-        <a href="" target="_blank">
-            <img src="assets/img/github.png" alt="GitHub">
-        </a>
-        <a href=""><img src="assets/img/x.png" alt="X"></a>
 
-        <a href="https://tr.linkedin.com/" target="_blank">
-            <img src="assets/img/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="TikTok">
-        </a>
-        
-    </div>
-</footer>
+    <footer>
+        <p>Tüm Hakları Saklıdır &copy; 2025</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="assets/img/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram">
+            </a>
+            <a href="" target="_blank">
+                <img src="assets/img/github.png" alt="GitHub">
+            </a>
+            <a href=""><img src="assets/img/x.png" alt="X"></a>
+            <a href="https://tr.linkedin.com/" target="_blank">
+                <img src="assets/img/png-clipart-computer-icons-symbol-linkedin-email-telephone-symbol-miscellaneous-blue-thumbnail.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
 
-<script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 </html>
